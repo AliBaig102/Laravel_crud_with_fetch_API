@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    width:100%;
+    /*min-height:100vh;*/
+}
+#h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw auto;
+    font-size:max(3vw,30px);
+}
+table{
+    width: 70%;
+    box-shadow: 0 0 .5vw ;
+    padding: 2%;
+    margin: 0 auto;
+    display: grid;
+}
+table thead{
+    width:100%;
+}
+thead tr{
+    display: grid;
+    grid-template-columns: 5% 20% 30% 10% 15% 15%;
+    gap: .5vw;
+    grid-auto-rows: 3vw;
+}
+tr th{
+    box-shadow: 0 0 .5vw rgba(0, 0, 0, 0.544);
+    display: flex;
+    border-radius: .5vw;
+    align-items: center;
+    justify-content: center;
+    font-size:max(2vw,20px);
+}
+table tbody{
+    width:100%;
+}
+tbody tr{
+    display: grid;
+    margin-top: .5vw;
+    grid-template-columns: 5% 20% 30% 10% 15% 15%;
+    gap: .5vw;
+    grid-auto-rows: 3vw;
+}
+tr td{
+    box-shadow: 0 0 .5vw gray;
+    border-radius: .5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:max(1.4vw,10px);
+}
+tr td:nth-child(5){
+    background: blue;
+}
+td a{
+    color: white;
+}
+tr td:last-child{
+    background: red;
+}
+.add_new{
+    position: absolute;
+    right: 15%;
+    top: 5%;
+    background: rgb(193, 187, 75);
+    font-size:max(2vw,20px);
+    border-radius: .5vw;
+    color: white;
+    padding: .5vw 1vw;
+    font-weight: bold;
+}
+form{
+    width: 25vw;
+    margin: 10vw auto;
+    box-shadow: 0 0 .5vw;
+    padding: 1%;
+}
+form h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    font-size:max(3vw,30px);
+}
+form div{
+    display: grid;
+    grid-template-columns: 30% 5% 65%;
+    align-items: center;
+    width:100%;
+    font-size:max(2vw,20px);
+    margin: .5vw 0;
+}
+form div input{
+    height:100%;
+    outline: none;
+    font-size:max(1vw,10px);
+    padding: 0 2%;
+}
+div label{
+    font-size:max(2vw,20px);
+}
+form button{
+    width: 70%;
+    font-size:max(2vw,20px);
+    margin: 1vw auto auto;
+    display: block;
+    background: gold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: .5vw;
+    box-shadow: 0 0 .5vw rgba(0, 0, 0, 0.496);
+}
+.model{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.31);
+    display: none;
+}
+.model form{
+    background: white;
+}
+.model.active{
+    display: block;
+}
+.delete_model strong{
+    font-size: max(1.5vw,10px);
+}
+.delete_model div{
+    display: flex;
+}
+.delete_model div button{
+    font-size: max(1vw,10px);
+    width: 40%;
+    height: 2vw;
+    background: red;
+}
+#cancel_btn{
+    background: transparent;
+    color: black;
+}
